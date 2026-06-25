@@ -1,100 +1,102 @@
-# NIST Cybersecurity Framework (CSF) Report
+# Reporte de Aplicación del NIST Cybersecurity Framework (CSF)
 
-## Incident Overview
+## Resumen del Incidente
 
-The organization experienced a **Denial of Service (DoS)** attack caused by a large volume of ICMP packets directed at the internal network. The excessive traffic saturated network resources, causing critical network services to become unavailable for approximately two hours.
+La organización sufrió un ataque de **Denegación de Servicio (DoS)** mediante una inundación de paquetes ICMP dirigida a la red interna. El alto volumen de tráfico saturó la infraestructura de red, provocando la interrupción de los servicios durante aproximadamente dos horas.
 
-The investigation determined that the primary cause of the incident was an improperly configured firewall that failed to restrict malicious ICMP traffic.
-
----
-
-# NIST CSF Analysis
-
-## 1. Identify
-
-### Incident
-
-* Denial of Service (DoS)
-* ICMP Flood attack
-
-### Assets Affected
-
-* Internal network
-* Network services
-* Business operations
-
-### Vulnerability
-
-* Firewall configuration allowed excessive ICMP traffic.
-* Lack of preventive network filtering.
-
-### Business Impact
-
-* Network unavailable for approximately two hours.
-* Employees unable to access network resources.
-* Business operations interrupted.
+La investigación determinó que la causa raíz del incidente fue una configuración inadecuada del firewall, que permitió el ingreso de tráfico ICMP malicioso sin aplicar restricciones suficientes.
 
 ---
 
-## 2. Protect
+# Aplicación del NIST Cybersecurity Framework (CSF)
 
-The following controls were recommended to reduce the likelihood of similar incidents:
+## 1. Identify (Identificar)
 
-* Configure firewall rules to limit ICMP traffic.
-* Implement ICMP rate limiting.
-* Validate source IP addresses.
-* Deploy IDS/IPS solutions.
-* Maintain secure firewall configurations.
+### Tipo de incidente
 
----
+- Ataque de Denegación de Servicio (DoS).
+- Inundación de paquetes ICMP (ICMP Flood).
 
-## 3. Detect
+### Activos afectados
 
-Detection capabilities should include:
+- Red interna.
+- Servicios de red.
+- Operaciones de la organización.
 
-* Continuous network monitoring.
-* IDS/IPS alerts.
-* Network traffic analysis.
-* Log monitoring.
-* Detection of abnormal ICMP traffic patterns.
+### Vulnerabilidad identificada
 
----
+- Firewall mal configurado.
+- Ausencia de reglas para limitar el tráfico ICMP.
+- Controles preventivos insuficientes.
 
-## 4. Respond
+### Impacto al negocio
 
-During the incident, the organization performed the following actions:
-
-* Blocked incoming ICMP traffic.
-* Isolated affected network services.
-* Restored critical services.
-* Investigated the incident.
-* Updated firewall security controls.
+- Interrupción de los servicios durante aproximadamente dos horas.
+- Los empleados no pudieron acceder a los recursos de red.
+- Afectación de la continuidad operativa.
+- Posibles pérdidas económicas derivadas de la indisponibilidad de los servicios.
 
 ---
 
-## 5. Recover
+## 2. Protect (Proteger)
 
-Recovery activities included:
+Para reducir el riesgo de futuros incidentes similares se recomienda implementar los siguientes controles:
 
-* Restoring normal network operations.
-* Verifying network stability.
-* Monitoring for additional malicious activity.
-* Implementing long-term security improvements.
-* Documenting lessons learned.
-
----
-
-# Lessons Learned
-
-This incident demonstrated the importance of properly configured network security controls. Continuous monitoring, firewall maintenance, IDS/IPS deployment, and proactive security management significantly reduce the risk of future Denial of Service attacks.
+- Configurar correctamente las reglas del firewall.
+- Aplicar limitación de tráfico ICMP (Rate Limiting).
+- Validar las direcciones IP de origen.
+- Implementar soluciones IDS/IPS.
+- Realizar mantenimiento periódico de las configuraciones de seguridad.
+- Revisar continuamente las políticas de protección de la red.
 
 ---
 
-# Key Takeaways
+## 3. Detect (Detectar)
 
-* Proper firewall configuration is critical.
-* ICMP traffic should be monitored and controlled.
-* Continuous monitoring enables faster detection.
-* Incident response plans reduce downtime.
-* Recovery should always include security improvements.
+La organización debe fortalecer sus capacidades de detección mediante:
 
+- Monitoreo continuo de la red.
+- Supervisión del tráfico mediante IDS/IPS.
+- Revisión de registros (logs).
+- Generación de alertas automáticas.
+- Detección temprana de patrones anómalos de tráfico ICMP.
+
+---
+
+## 4. Respond (Responder)
+
+Durante el incidente se realizaron las siguientes acciones:
+
+- Bloqueo del tráfico ICMP malicioso.
+- Contención del incidente para evitar una mayor afectación.
+- Restauración de los servicios críticos.
+- Investigación del origen del ataque.
+- Actualización de las reglas del firewall para prevenir nuevos ataques.
+
+---
+
+## 5. Recover (Recuperar)
+
+Después de controlar el incidente se llevaron a cabo las siguientes actividades:
+
+- Restauración completa de los servicios de red.
+- Verificación de la estabilidad de la infraestructura.
+- Monitoreo continuo para detectar nuevos intentos de ataque.
+- Implementación de mejoras permanentes en la seguridad.
+- Documentación del incidente y de las lecciones aprendidas.
+
+---
+
+# Lecciones Aprendidas
+
+Este incidente demostró que una configuración incorrecta del firewall puede comprometer la disponibilidad de los servicios de una organización. La implementación de controles preventivos, el monitoreo continuo y una estrategia adecuada de respuesta a incidentes permiten reducir significativamente el impacto de futuros ataques de Denegación de Servicio.
+
+---
+
+# Conclusiones
+
+- La configuración adecuada del firewall es un control crítico para proteger la infraestructura de red.
+- El monitoreo continuo permite detectar actividades maliciosas de forma temprana.
+- Las soluciones IDS/IPS fortalecen la capacidad de detección y respuesta.
+- Aplicar el NIST Cybersecurity Framework proporciona una metodología estructurada para gestionar incidentes de ciberseguridad.
+- La mejora continua de los controles de seguridad incrementa la resiliencia de la organización frente a futuras amenazas.
