@@ -101,3 +101,26 @@ cybersecurity-incident-response-nist-csf/
 ## Conclusión
 
 Este proyecto demuestra cómo utilizar el NIST Cybersecurity Framework (CSF) para gestionar un incidente de ciberseguridad desde su identificación hasta la recuperación. La correcta configuración del firewall, el monitoreo continuo y la implementación de controles preventivos fortalecen la resiliencia de la organización frente a futuros ataques de Denegación de Servicio.
+
+
+## Evidencias Visuales
+
+### 1. Resumen del Incidente
+
+![Resumen](assets/01-incident-overview.png)
+
+### 2. ICMP Flood
+
+![ICMP](assets/02-icmp-flood-analysis.png)
+
+### 3. Protección mediante Firewall
+
+![Firewall](assets/03-firewall-protection.png)
+
+### 4. Aplicación del NIST CSF
+
+![NIST](assets/04-nist-csf-workflow.png)
+
+### 5. Dashboard Ejecutivo
+
+![Dashboard](assets/05-executive-dashboard.png)
